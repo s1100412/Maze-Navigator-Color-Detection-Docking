@@ -15,7 +15,7 @@ class MazeNavigator:
         self.image_sub = rospy.Subscriber('/image_raw', Image, self.image_callback)
         self.twist = Twist()
         self.bridge = CvBridge()
-        self.right_wall_distance = 0.3  # 設定右側牆壁的目標距離為0.3米
+        self.right_wall_distance = 0.3  # 設定右側牆壁的目標距離為0.3公尺
         self.stop_movement = False
         self.last_stop_time = 0
         self.front_distance = 10
