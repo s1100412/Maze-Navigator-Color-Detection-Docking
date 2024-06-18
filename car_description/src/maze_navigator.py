@@ -87,8 +87,8 @@ class MazeNavigator:
         # 計算紅色區域的佔比
         red_ratio = red_pixels / total_pixels
 
-        # 檢測紅色區域佔比是否超過40%
-        red_detected = red_ratio > 0.4
+        # 檢測紅色區域佔比是否超過35%
+        red_detected = red_ratio > 0.35
 
         # rospy.loginfo("Red pixel ratio: {:.2f}".format(red_ratio))  \
 
